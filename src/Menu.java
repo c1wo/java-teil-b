@@ -1,12 +1,19 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Menu {
     ArrayList<Food> foods = new ArrayList<>();
+    int foodItem;
 
 
 
     public void printMenu() {
         System.out.println("    |Menu|\n \n|1. Burger \n|2. Wraps \n|3. Snacks \n|4. Getränke \n\n|5. Warenkorb \n|6. Bestellen");
+        System.out.println("\nDeine Auswahl : ");
+        Scanner reader = new Scanner(System.in);
+        foodItem = reader.nextInt();
+        reader.close();
+        clear();
+        print(foodItem);
     }
 
     public void print(int foodItem) {
@@ -34,5 +41,9 @@ public class Menu {
             System.out.println("Du hast folgendes bestellt ");
             System.out.println("...");
         }
+    }
+
+    public void clear(){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 }
