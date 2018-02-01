@@ -1,7 +1,9 @@
 public class Burger extends Food {
-    String[] burgerList =
-            {"Big Mac","Filet-O-Fish","Cheeseburger","Hamburger"}
-    ;
+    String[][] burgerList = {
+            {"Big Mac", "Filet-O-Fish", "Cheeseburger", "Hamburger"}
+    };
+
+
 
     int burgerIndex;
     int sizeIndex;
